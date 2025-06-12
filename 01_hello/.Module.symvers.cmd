@@ -1,0 +1,1 @@
+savedcmd_/home/venkat/programming/linux_driver/01_hello/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/venkat/programming/linux_driver/01_hello/Module.symvers -T /home/venkat/programming/linux_driver/01_hello/modules.order -i Module.symvers -e 
