@@ -1,1 +1,1 @@
-savedcmd_/home/venkat/programming/linux_driver/01_hello/hello.mod := printf '%s\n'   hello.o | awk '!x[$$0]++ { print("/home/venkat/programming/linux_driver/01_hello/"$$0) }' > /home/venkat/programming/linux_driver/01_hello/hello.mod
+savedcmd_/home/john/aparna/linux_driver/01_hello/hello.mod := printf '%s\n'   hello.o | awk '!x[$$0]++ { print("/home/john/aparna/linux_driver/01_hello/"$$0) }' > /home/john/aparna/linux_driver/01_hello/hello.mod
