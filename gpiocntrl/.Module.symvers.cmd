@@ -1,1 +1,0 @@
-savedcmd_/home/john/aparna/linux_driver/gpiocntrl/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/john/aparna/linux_driver/gpiocntrl/Module.symvers -T /home/john/aparna/linux_driver/gpiocntrl/modules.order -i Module.symvers -e 

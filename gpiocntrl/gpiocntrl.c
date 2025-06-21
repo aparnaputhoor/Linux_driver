@@ -5,7 +5,7 @@
 static struct gpio_desc *led, *button;
 
 #define IO_LED 24
-#define IO_BUTTON 23
+#define IO_BUTTON 22
 
 #define IO_OFFSET 0
 
