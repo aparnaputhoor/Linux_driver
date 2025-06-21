@@ -11,10 +11,9 @@ static struct gpio_desc *led, *button;
 
 static int __init my_init(void)
 {
-	//printk("entry\n");
 	int status;
 
-	led = gpio_to_desc(24);
+	led = gpio_to_desc(IO_LED + IO_OFFSET);
 	if (!led) {
 		printk("gpioctrl - Error getting pin 24\n");
 		return -ENODEV;
@@ -25,7 +24,8 @@ static int __init my_init(void)
 		printk("gpioctrl - Error getting pin 23\n");
 		return -ENODEV;
 	}
-		status = gpiod_direction_output(led, 0);
+
+	status = gpiod_direction_output(led, 0);
 	if (status) {
 		printk("gpioctrl - Error setting pin 24 to output\n");
 		return status;
@@ -43,9 +43,9 @@ static int __init my_init(void)
 
 	return 0;
 }
+
 static void __exit my_exit(void)
 {
-	//printk("exit\n");
 	gpiod_set_value(led, 0);
 }
 
@@ -53,5 +53,5 @@ module_init(my_init);
 module_exit(my_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Johannes 4Linux");
+MODULE_AUTHOR("Aparna");
 MODULE_DESCRIPTION("An example for using GPIOs without the device tree");

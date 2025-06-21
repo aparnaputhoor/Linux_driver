@@ -1,1 +1,0 @@
-savedcmd_/home/john/aparna/linux_driver/gpiocntrl/gpiocntrl.mod := printf '%s\n'   gpiocntrl.o | awk '!x[$$0]++ { print("/home/john/aparna/linux_driver/gpiocntrl/"$$0) }' > /home/john/aparna/linux_driver/gpiocntrl/gpiocntrl.mod
